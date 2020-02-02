@@ -1,1 +1,1079 @@
-[null,{"name":"kick","permissions":"NONE","restriction":"1","_id":"pSMEW","actions":[{"info":"1","find":"Community Staff","storage":"1","varName":"role","name":"Find Role"},{"member":"1","varName":"","role":"3","varName2":"role","iftrue":"3","iftrueVal":"2","iffalse":"0","iffalseVal":"","name":"Check If Member has Role"},{"channel":"0","varName":"","message":"[${member}], You are missing the Community Staff role.","storage":"0","varName2":"","iffalse":"0","iffalseVal":"","name":"Send Message"},{"name":"End Action Sequence"},{"condition":"1","comparison":"0","value":"1","iftrue":"3","iftrueVal":"2","iffalse":"0","iffalseVal":"","name":"Check Parameters"},{"channel":"0","varName":"","message":"`?kick [@member] (reason)`","storage":"0","varName2":"","iffalse":"0","iffalseVal":"","name":"Send Message"},{"name":"End Action Sequence"},{"member":"0","varName":"","role":"3","varName2":"role","iftrue":"0","iftrueVal":"","iffalse":"3","iffalseVal":"2","name":"Check If Member has Role"},{"channel":"0","varName":"","message":"[${mentionedUser}], You can't kick a Staff Member. ","storage":"0","varName2":"","iffalse":"0","iffalseVal":"","name":"Send Message"},{"name":"End Action Sequence"},{"member":"0","varName":"","info":"2","varName2":"","iftrue":"3","iftrueVal":"2","iffalse":"0","iffalseVal":"2","name":"Check If Member"},{"channel":"0","varName":"","message":":warning: I'm unable to kick that member... Please check my permissions ","storage":"0","varName2":"","iffalse":"0","iffalseVal":"","name":"Send Message"},{"name":"End Action Sequence"},{"info":"1","infoIndex":"2","storage":"1","varName":"reason","name":"Store Command Params"},{"storage":"1","varName":"reason","comparison":"0","value":"","iftrue":"0","iftrueVal":"","iffalse":"2","iffalseVal":"24","name":"Check Variable"},{"member":"0","varName":"","reason":"Member [${mentionedUser.tag}] was Banned by [${member.user.tag}] for Following reason: ${tempVars(\"reason\")}","name":"Kick Member"},{"info":"0","find":"670326575757262889","storage":"1","varName":"channel","name":"Find Channel"},{"title":"Member Kicked","author":"${mentionedUser.username}","color":"RANDOM","url":"","authorIcon":"${mentionedUser.displayAvatarURL}","authorUrl":"","imageUrl":"","thumbUrl":"${mentionedUser.displayAvatarURL}","timestamp":"true","debug":"false","text":"","year":"","month":"","day":"","hour":"","minute":"","second":"","storage":"1","varName":"embed","name":"Create Embed Message"},{"storage":"1","varName":"embed","fieldName":"User","message":"${mentionedUser.tag}","inline":"0","name":"Add Embed Field"},{"storage":"1","varName":"embed","fieldName":"Staff Member","message":"${member.user.tag}","inline":"0","name":"Add Embed Field"},{"storage":"1","varName":"embed","fieldName":"Reason:","message":"${tempVars(\"reason\")}","inline":"1","name":"Add Embed Field"},{"storage":"1","varName":"embed","channel":"5","varName2":"channel","storage3":"0","varName3":"","iffalse":"0","iffalseVal":"","messageContent":"","name":"Send Embed Message"},{"name":"End Action Sequence"},{"member":"0","varName":"","reason":"Member [${mentionedUser.tag}] was Banned by [${member.user.tag}] for Following reason: None","name":"Kick Member"},{"info":"0","find":"670326575757262889","storage":"1","varName":"channel","name":"Find Channel"},{"title":"Member Kicked","author":"${mentionedUser.username}","color":"RANDOM","url":"","authorIcon":"${mentionedUser.displayAvatarURL}","authorUrl":"","imageUrl":"","thumbUrl":"${mentionedUser.displayAvatarURL}","timestamp":"true","debug":"false","text":"","year":"","month":"","day":"","hour":"","minute":"","second":"","storage":"1","varName":"embed","name":"Create Embed Message"},{"storage":"1","varName":"embed","fieldName":"User","message":"${mentionedUser.tag}","inline":"0","name":"Add Embed Field"},{"storage":"1","varName":"embed","fieldName":"Staff Member","message":"${member.user.tag}","inline":"0","name":"Add Embed Field"},{"storage":"1","varName":"embed","fieldName":"Reason:","message":"None","inline":"1","name":"Add Embed Field"},{"storage":"1","varName":"embed","channel":"5","varName2":"channel","storage3":"0","varName3":"","iffalse":"0","iffalseVal":"","messageContent":"","name":"Send Embed Message"},{"name":"End Action Sequence"}]},{"name":"ban","permissions":"NONE","restriction":"1","_id":"UXbrC","actions":[{"info":"1","find":"Community Staff","storage":"1","varName":"role","name":"Find Role"},{"member":"1","varName":"","role":"3","varName2":"role","iftrue":"3","iftrueVal":"2","iffalse":"0","iffalseVal":"","name":"Check If Member has Role"},{"channel":"0","varName":"","message":"[${member}], You are missing the Community Staff role.","storage":"0","varName2":"","iffalse":"0","iffalseVal":"","name":"Send Message"},{"name":"End Action Sequence"},{"condition":"1","comparison":"0","value":"1","iftrue":"3","iftrueVal":"2","iffalse":"0","iffalseVal":"","name":"Check Parameters"},{"channel":"0","varName":"","message":"`?ban [@member] (reason)`","storage":"0","varName2":"","iffalse":"0","iffalseVal":"","name":"Send Message"},{"name":"End Action Sequence"},{"member":"0","varName":"","role":"3","varName2":"role","iftrue":"0","iftrueVal":"","iffalse":"3","iffalseVal":"2","name":"Check If Member has Role"},{"channel":"0","varName":"","message":"[${mentionedUser}], You can't Ban a Staff Member. ","storage":"0","varName2":"","iffalse":"0","iffalseVal":"","name":"Send Message"},{"name":"End Action Sequence"},{"member":"0","varName":"","info":"1","varName2":"","iftrue":"3","iftrueVal":"2","iffalse":"0","iffalseVal":"2","name":"Check If Member"},{"channel":"0","varName":"","message":":warning: I'm unable to ban that member... Please check my permissions ","storage":"0","varName2":"","iffalse":"0","iffalseVal":"","name":"Send Message"},{"name":"End Action Sequence"},{"info":"1","infoIndex":"2","storage":"1","varName":"reason","name":"Store Command Params"},{"storage":"1","varName":"reason","comparison":"0","value":"","iftrue":"0","iftrueVal":"","iffalse":"2","iffalseVal":"24","name":"Check Variable"},{"member":"0","varName":"","reason":"Member [${mentionedUser.tag}] was Banned by [${member.user.tag}] for Following reason: ${tempVars(\"reason\")}","name":"Ban Member"},{"info":"0","find":"670326575757262889","storage":"1","varName":"channel","name":"Find Channel"},{"title":"Member Banned","author":"${mentionedUser.username}","color":"RANDOM","url":"","authorIcon":"${mentionedUser.displayAvatarURL}","authorUrl":"","imageUrl":"","thumbUrl":"${mentionedUser.displayAvatarURL}","timestamp":"true","debug":"false","text":"","year":"","month":"","day":"","hour":"","minute":"","second":"","storage":"1","varName":"embed","name":"Create Embed Message"},{"storage":"1","varName":"embed","fieldName":"User","message":"${mentionedUser.tag}","inline":"0","name":"Add Embed Field"},{"storage":"1","varName":"embed","fieldName":"Staff Member","message":"${member.user.tag}","inline":"0","name":"Add Embed Field"},{"storage":"1","varName":"embed","fieldName":"Reason:","message":"${tempVars(\"reason\")}","inline":"1","name":"Add Embed Field"},{"storage":"1","varName":"embed","channel":"5","varName2":"channel","storage3":"0","varName3":"","iffalse":"0","iffalseVal":"","messageContent":"","name":"Send Embed Message"},{"name":"End Action Sequence"},{"member":"0","varName":"","reason":"Member [${mentionedUser.tag}] was Banned by [${member.user.tag}] for Following reason: None","name":"Ban Member"},{"info":"0","find":"670326575757262889","storage":"1","varName":"channel","name":"Find Channel"},{"title":"Member Banned","author":"${mentionedUser.username}","color":"RANDOM","url":"","authorIcon":"${mentionedUser.displayAvatarURL}","authorUrl":"","imageUrl":"","thumbUrl":"${mentionedUser.displayAvatarURL}","timestamp":"true","debug":"false","text":"","year":"","month":"","day":"","hour":"","minute":"","second":"","storage":"1","varName":"embed","name":"Create Embed Message"},{"storage":"1","varName":"embed","fieldName":"User","message":"${mentionedUser.tag}","inline":"0","name":"Add Embed Field"},{"storage":"1","varName":"embed","fieldName":"Staff Member","message":"${member.user.tag}","inline":"0","name":"Add Embed Field"},{"storage":"1","varName":"embed","fieldName":"Reason:","message":"None","inline":"1","name":"Add Embed Field"},{"storage":"1","varName":"embed","channel":"5","varName2":"channel","storage3":"0","varName3":"","iffalse":"0","iffalseVal":"","messageContent":"","name":"Send Embed Message"},{"name":"End Action Sequence"}]},{"name":"suggest","permissions":"NONE","restriction":"1","_id":"RruCG","actions":[{"condition":"0","comparison":"0","value":"0","iftrue":"0","iftrueVal":"","iffalse":"3","iffalseVal":"2","name":"Check Parameters"},{"channel":"0","varName":"","message":"[${member}], You are missing parameters after command. `?suggest [Text]`","storage":"0","varName2":"","iffalse":"0","iffalseVal":"","name":"Send Message"},{"name":"End Action Sequence"},{"info":"1","infoIndex":"1","storage":"1","varName":"text","name":"Store Command Params"},{"storage":"1","varName":"id","min":"1","max":"50000","name":"Generate Random Number"},{"server":"0","varName":"","dataName":"${tempVars(\"id\")}","changeType":"0","value":"tempVars(\"text\")","name":"Control Server Data"},{"info":"0","find":"671703756068356106","storage":"1","varName":"channel","name":"Find Channel"},{"title":"Suggestion | #${tempVars(\"id\")}","author":"${member.user.username}","color":"RANDOM","url":"","authorIcon":"${member.user.displayAvatarURL}","authorUrl":"","imageUrl":"","thumbUrl":"","timestamp":"false","debug":"false","text":"","year":"","month":"","day":"","hour":"","minute":"","second":"","storage":"1","varName":"embed","name":"Create Embed Message"},{"storage":"1","varName":"embed","message":"${tempVars(\"text\")}","name":"Set Embed Description"},{"storage":"1","varName":"embed","message":"${member.user.tag} | ID: #${tempVars(\"id\")}","footerIcon":"","name":"Set Embed Footer"},{"storage":"1","varName":"embed","channel":"5","varName2":"channel","storage3":"0","varName3":"","iffalse":"0","iffalseVal":"","messageContent":"","name":"Send Embed Message"},{"channel":"0","varName":"","message":":white_check_mark: Posted your suggestion to #suggestions.","storage":"0","varName2":"","iffalse":"0","iffalseVal":"","name":"Send Message"},{"storage":"0","varName":"","name":"Delete Message"}]},{"name":"reply","permissions":"NONE","restriction":"1","_id":"VApJF","actions":[{"info":"1","find":"Community Staff","storage":"1","varName":"role","name":"Find Role"},{"member":"1","varName":"","role":"3","varName2":"role","iftrue":"3","iftrueVal":"2","iffalse":"0","iffalseVal":"","name":"Check If Member has Role"},{"channel":"0","varName":"","message":"[${member}], You are missing the Community Staff role.","storage":"0","varName2":"","iffalse":"0","iffalseVal":"","name":"Send Message"},{"name":"End Action Sequence"},{"condition":"0","comparison":"0","value":"0","iftrue":"0","iftrueVal":"","iffalse":"3","iffalseVal":"2","name":"Check Parameters"},{"channel":"0","varName":"","message":"[${member}], Please provide me an id and text. `?reply 12345 Text`","storage":"0","varName2":"","iffalse":"0","iffalseVal":"","name":"Send Message"},{"name":"End Action Sequence"},{"condition":"0","comparison":"0","value":"1","iftrue":"0","iftrueVal":"","iffalse":"3","iffalseVal":"2","name":"Check Parameters"},{"channel":"0","varName":"","message":"[${member}], Please provide me text. `?reply 12345 Text`","storage":"0","varName2":"","iffalse":"0","iffalseVal":"","name":"Send Message"},{"name":"End Action Sequence"},{"info":"0","infoIndex":"1","storage":"1","varName":"id","name":"Store Command Params"},{"server":"0","varName":"","dataName":"${tempVars(\"id\")}","comparison":"0","value":"","iftrue":"3","iftrueVal":"2","iffalse":"0","iffalseVal":"","name":"Check Server Data"},{"channel":"0","varName":"","message":"[${member}], Make sure the ID exists.","storage":"0","varName2":"","iffalse":"0","iffalseVal":"","name":"Send Message"},{"name":"End Action Sequence"},{"info":"1","infoIndex":"2","storage":"1","varName":"text","name":"Store Command Params"},{"server":"0","varName":"","dataName":"${tempVars(\"id\")}","defaultVal":"I'm Sorry I wasn't able to store the text from the database.","storage":"1","varName2":"ee","name":"Store Server Data"},{"title":"Reply to Suggestion #${tempVars(\"id\")}","author":"","color":"RANDOM","url":"","authorIcon":"","authorUrl":"","imageUrl":"","thumbUrl":"","timestamp":"true","debug":"false","text":"","year":"","month":"","day":"","hour":"","minute":"","second":"","storage":"1","varName":"embed","name":"Create Embed Message"},{"storage":"1","varName":"embed","fieldName":"Suggestion","message":"${tempVars(\"ee\")}","inline":"1","name":"Add Embed Field"},{"storage":"1","varName":"embed","fieldName":"Reply from Staff Member","message":"${tempVars(\"text\")}","inline":"1","name":"Add Embed Field"},{"storage":"1","varName":"embed","message":"#${tempVars(\"id\")} ","footerIcon":"","name":"Set Embed Footer"},{"info":"0","find":"671703756068356106","storage":"1","varName":"channel","name":"Find Channel"},{"storage":"1","varName":"embed","channel":"5","varName2":"channel","storage3":"0","varName3":"","iffalse":"0","iffalseVal":"","messageContent":"","name":"Send Embed Message"},{"channel":"0","varName":"","message":":white_check_mark: Posted your reply to #suggestions.","storage":"0","varName2":"","iffalse":"0","iffalseVal":"","name":"Send Message"},{"storage":"0","varName":"","name":"Delete Message"},{"name":"End Action Sequence"}]},{"name":"poll","permissions":"NONE","restriction":"1","_id":"ptgaO","actions":[{"info":"1","find":"Community Staff","storage":"1","varName":"role","name":"Find Role"},{"member":"1","varName":"","role":"3","varName2":"role","iftrue":"3","iftrueVal":"2","iffalse":"0","iffalseVal":"","name":"Check If Member has Role"},{"channel":"0","varName":"","message":"[${member}], You are missing the Community Staff role.","storage":"0","varName2":"","iffalse":"0","iffalseVal":"","name":"Send Message"},{"name":"End Action Sequence"},{"condition":"0","comparison":"0","value":"0","iftrue":"0","iftrueVal":"","iffalse":"3","iffalseVal":"2","name":"Check Parameters"},{"channel":"0","varName":"","message":"You are missing the parameters. `?poll Text`","storage":"0","varName2":"","iffalse":"0","iffalseVal":"","name":"Send Message"},{"name":"End Action Sequence"},{"info":"1","infoIndex":"1","storage":"1","varName":"poll","name":"Store Command Params"},{"info":"0","find":"671744341081063443","storage":"1","varName":"channel","name":"Find Channel"},{"title":"Poll","author":"${member.user.username}","color":"RANDOM","url":"","authorIcon":"${member.user.displayAvatarURL}","authorUrl":"","imageUrl":"","thumbUrl":"","timestamp":"false","debug":"false","text":"","year":"","month":"","day":"","hour":"","minute":"","second":"","storage":"1","varName":"embed","name":"Create Embed Message"},{"storage":"1","varName":"embed","message":"${tempVars(\"poll\")}","name":"Set Embed Description"},{"storage":"1","varName":"embed","message":"👍 Sounds good! | 👎 I don't like it. | ❗ Inappropriate.","footerIcon":"","name":"Set Embed Footer"},{"storage":"1","varName":"embed","channel":"5","varName2":"channel","storage3":"1","varName3":"msg","iffalse":"0","iffalseVal":"","messageContent":"","name":"Send Embed Message"},{"storage":"1","varName":"msg","emoji":"4","varName2":"👍","varName3":"","name":"Add Reaction"},{"storage":"1","varName":"msg","emoji":"4","varName2":"👎","varName3":"","name":"Add Reaction"},{"storage":"1","varName":"msg","emoji":"4","varName2":"❗","varName3":"","name":"Add Reaction"},{"channel":"0","varName":"","message":"Posted your poll to #polls.","storage":"0","varName2":"","iffalse":"0","iffalseVal":"","name":"Send Message"},{"storage":"0","varName":"","name":"Delete Message"}]},{"name":"help","permissions":"NONE","restriction":"1","_id":"UdfeU","actions":[{"channel":"0","varName":"","message":"``` css== HELP ==\n?help - Show's Info About Commands\n?suggest - Suggest something PLEASEEEE!\n\n== Staf Members == \n?kick - Kick a Member\n?ban - Ban a Member\n?poll - Will Create poll for ya <3\n?reply - will reply to a suggestion (Please use the id without the hasttag.)```\n","storage":"0","varName2":"","iffalse":"0","iffalseVal":"","name":"Send Message"}]},{"name":"","permissions":"NONE","restriction":"1","_id":"FSDGI","actions":[]}]
+[
+  null,
+  {
+    "name": "kick",
+    "permissions": "NONE",
+    "restriction": "1",
+    "_id": "pSMEW",
+    "actions": [
+      {
+        "info": "1",
+        "find": "Community Staff",
+        "storage": "1",
+        "varName": "role",
+        "name": "Find Role"
+      },
+      {
+        "member": "1",
+        "varName": "",
+        "role": "3",
+        "varName2": "role",
+        "iftrue": "3",
+        "iftrueVal": "2",
+        "iffalse": "0",
+        "iffalseVal": "",
+        "name": "Check If Member has Role"
+      },
+      {
+        "channel": "0",
+        "varName": "",
+        "message": "[${member}], You are missing the Community Staff role.",
+        "storage": "0",
+        "varName2": "",
+        "iffalse": "0",
+        "iffalseVal": "",
+        "name": "Send Message"
+      },
+      {
+        "name": "End Action Sequence"
+      },
+      {
+        "condition": "1",
+        "comparison": "0",
+        "value": "1",
+        "iftrue": "3",
+        "iftrueVal": "2",
+        "iffalse": "0",
+        "iffalseVal": "",
+        "name": "Check Parameters"
+      },
+      {
+        "channel": "0",
+        "varName": "",
+        "message": "`?kick [@member] (reason)`",
+        "storage": "0",
+        "varName2": "",
+        "iffalse": "0",
+        "iffalseVal": "",
+        "name": "Send Message"
+      },
+      {
+        "name": "End Action Sequence"
+      },
+      {
+        "member": "0",
+        "varName": "",
+        "role": "3",
+        "varName2": "role",
+        "iftrue": "0",
+        "iftrueVal": "",
+        "iffalse": "3",
+        "iffalseVal": "2",
+        "name": "Check If Member has Role"
+      },
+      {
+        "channel": "0",
+        "varName": "",
+        "message": "[${mentionedUser}], You can't kick a Staff Member. ",
+        "storage": "0",
+        "varName2": "",
+        "iffalse": "0",
+        "iffalseVal": "",
+        "name": "Send Message"
+      },
+      {
+        "name": "End Action Sequence"
+      },
+      {
+        "member": "0",
+        "varName": "",
+        "info": "2",
+        "varName2": "",
+        "iftrue": "3",
+        "iftrueVal": "2",
+        "iffalse": "0",
+        "iffalseVal": "2",
+        "name": "Check If Member"
+      },
+      {
+        "channel": "0",
+        "varName": "",
+        "message": ":warning: I'm unable to kick that member... Please check my permissions ",
+        "storage": "0",
+        "varName2": "",
+        "iffalse": "0",
+        "iffalseVal": "",
+        "name": "Send Message"
+      },
+      {
+        "name": "End Action Sequence"
+      },
+      {
+        "info": "1",
+        "infoIndex": "2",
+        "storage": "1",
+        "varName": "reason",
+        "name": "Store Command Params"
+      },
+      {
+        "storage": "1",
+        "varName": "reason",
+        "comparison": "0",
+        "value": "",
+        "iftrue": "0",
+        "iftrueVal": "",
+        "iffalse": "2",
+        "iffalseVal": "24",
+        "name": "Check Variable"
+      },
+      {
+        "member": "0",
+        "varName": "",
+        "reason": "Member [${mentionedUser.tag}] was Banned by [${member.user.tag}] for Following reason: ${tempVars(\"reason\")}",
+        "name": "Kick Member"
+      },
+      {
+        "info": "0",
+        "find": "670326575757262889",
+        "storage": "1",
+        "varName": "channel",
+        "name": "Find Channel"
+      },
+      {
+        "title": "Member Kicked",
+        "author": "${mentionedUser.username}",
+        "color": "RANDOM",
+        "url": "",
+        "authorIcon": "${mentionedUser.displayAvatarURL}",
+        "authorUrl": "",
+        "imageUrl": "",
+        "thumbUrl": "${mentionedUser.displayAvatarURL}",
+        "timestamp": "true",
+        "debug": "false",
+        "text": "",
+        "year": "",
+        "month": "",
+        "day": "",
+        "hour": "",
+        "minute": "",
+        "second": "",
+        "storage": "1",
+        "varName": "embed",
+        "name": "Create Embed Message"
+      },
+      {
+        "storage": "1",
+        "varName": "embed",
+        "fieldName": "User",
+        "message": "${mentionedUser.tag}",
+        "inline": "0",
+        "name": "Add Embed Field"
+      },
+      {
+        "storage": "1",
+        "varName": "embed",
+        "fieldName": "Staff Member",
+        "message": "${member.user.tag}",
+        "inline": "0",
+        "name": "Add Embed Field"
+      },
+      {
+        "storage": "1",
+        "varName": "embed",
+        "fieldName": "Reason:",
+        "message": "${tempVars(\"reason\")}",
+        "inline": "1",
+        "name": "Add Embed Field"
+      },
+      {
+        "storage": "1",
+        "varName": "embed",
+        "channel": "5",
+        "varName2": "channel",
+        "storage3": "0",
+        "varName3": "",
+        "iffalse": "0",
+        "iffalseVal": "",
+        "messageContent": "",
+        "name": "Send Embed Message"
+      },
+      {
+        "name": "End Action Sequence"
+      },
+      {
+        "member": "0",
+        "varName": "",
+        "reason": "Member [${mentionedUser.tag}] was Banned by [${member.user.tag}] for Following reason: None",
+        "name": "Kick Member"
+      },
+      {
+        "info": "0",
+        "find": "670326575757262889",
+        "storage": "1",
+        "varName": "channel",
+        "name": "Find Channel"
+      },
+      {
+        "title": "Member Kicked",
+        "author": "${mentionedUser.username}",
+        "color": "RANDOM",
+        "url": "",
+        "authorIcon": "${mentionedUser.displayAvatarURL}",
+        "authorUrl": "",
+        "imageUrl": "",
+        "thumbUrl": "${mentionedUser.displayAvatarURL}",
+        "timestamp": "true",
+        "debug": "false",
+        "text": "",
+        "year": "",
+        "month": "",
+        "day": "",
+        "hour": "",
+        "minute": "",
+        "second": "",
+        "storage": "1",
+        "varName": "embed",
+        "name": "Create Embed Message"
+      },
+      {
+        "storage": "1",
+        "varName": "embed",
+        "fieldName": "User",
+        "message": "${mentionedUser.tag}",
+        "inline": "0",
+        "name": "Add Embed Field"
+      },
+      {
+        "storage": "1",
+        "varName": "embed",
+        "fieldName": "Staff Member",
+        "message": "${member.user.tag}",
+        "inline": "0",
+        "name": "Add Embed Field"
+      },
+      {
+        "storage": "1",
+        "varName": "embed",
+        "fieldName": "Reason:",
+        "message": "None",
+        "inline": "1",
+        "name": "Add Embed Field"
+      },
+      {
+        "storage": "1",
+        "varName": "embed",
+        "channel": "5",
+        "varName2": "channel",
+        "storage3": "0",
+        "varName3": "",
+        "iffalse": "0",
+        "iffalseVal": "",
+        "messageContent": "",
+        "name": "Send Embed Message"
+      },
+      {
+        "name": "End Action Sequence"
+      }
+    ]
+  },
+  {
+    "name": "ban",
+    "permissions": "NONE",
+    "restriction": "1",
+    "_id": "UXbrC",
+    "actions": [
+      {
+        "info": "1",
+        "find": "Community Staff",
+        "storage": "1",
+        "varName": "role",
+        "name": "Find Role"
+      },
+      {
+        "member": "1",
+        "varName": "",
+        "role": "3",
+        "varName2": "role",
+        "iftrue": "3",
+        "iftrueVal": "2",
+        "iffalse": "0",
+        "iffalseVal": "",
+        "name": "Check If Member has Role"
+      },
+      {
+        "channel": "0",
+        "varName": "",
+        "message": "[${member}], You are missing the Community Staff role.",
+        "storage": "0",
+        "varName2": "",
+        "iffalse": "0",
+        "iffalseVal": "",
+        "name": "Send Message"
+      },
+      {
+        "name": "End Action Sequence"
+      },
+      {
+        "condition": "1",
+        "comparison": "0",
+        "value": "1",
+        "iftrue": "3",
+        "iftrueVal": "2",
+        "iffalse": "0",
+        "iffalseVal": "",
+        "name": "Check Parameters"
+      },
+      {
+        "channel": "0",
+        "varName": "",
+        "message": "`?ban [@member] (reason)`",
+        "storage": "0",
+        "varName2": "",
+        "iffalse": "0",
+        "iffalseVal": "",
+        "name": "Send Message"
+      },
+      {
+        "name": "End Action Sequence"
+      },
+      {
+        "member": "0",
+        "varName": "",
+        "role": "3",
+        "varName2": "role",
+        "iftrue": "0",
+        "iftrueVal": "",
+        "iffalse": "3",
+        "iffalseVal": "2",
+        "name": "Check If Member has Role"
+      },
+      {
+        "channel": "0",
+        "varName": "",
+        "message": "[${mentionedUser}], You can't Ban a Staff Member. ",
+        "storage": "0",
+        "varName2": "",
+        "iffalse": "0",
+        "iffalseVal": "",
+        "name": "Send Message"
+      },
+      {
+        "name": "End Action Sequence"
+      },
+      {
+        "member": "0",
+        "varName": "",
+        "info": "1",
+        "varName2": "",
+        "iftrue": "3",
+        "iftrueVal": "2",
+        "iffalse": "0",
+        "iffalseVal": "2",
+        "name": "Check If Member"
+      },
+      {
+        "channel": "0",
+        "varName": "",
+        "message": ":warning: I'm unable to ban that member... Please check my permissions ",
+        "storage": "0",
+        "varName2": "",
+        "iffalse": "0",
+        "iffalseVal": "",
+        "name": "Send Message"
+      },
+      {
+        "name": "End Action Sequence"
+      },
+      {
+        "info": "1",
+        "infoIndex": "2",
+        "storage": "1",
+        "varName": "reason",
+        "name": "Store Command Params"
+      },
+      {
+        "storage": "1",
+        "varName": "reason",
+        "comparison": "0",
+        "value": "",
+        "iftrue": "0",
+        "iftrueVal": "",
+        "iffalse": "2",
+        "iffalseVal": "24",
+        "name": "Check Variable"
+      },
+      {
+        "member": "0",
+        "varName": "",
+        "reason": "Member [${mentionedUser.tag}] was Banned by [${member.user.tag}] for Following reason: ${tempVars(\"reason\")}",
+        "name": "Ban Member"
+      },
+      {
+        "info": "0",
+        "find": "670326575757262889",
+        "storage": "1",
+        "varName": "channel",
+        "name": "Find Channel"
+      },
+      {
+        "title": "Member Banned",
+        "author": "${mentionedUser.username}",
+        "color": "RANDOM",
+        "url": "",
+        "authorIcon": "${mentionedUser.displayAvatarURL}",
+        "authorUrl": "",
+        "imageUrl": "",
+        "thumbUrl": "${mentionedUser.displayAvatarURL}",
+        "timestamp": "true",
+        "debug": "false",
+        "text": "",
+        "year": "",
+        "month": "",
+        "day": "",
+        "hour": "",
+        "minute": "",
+        "second": "",
+        "storage": "1",
+        "varName": "embed",
+        "name": "Create Embed Message"
+      },
+      {
+        "storage": "1",
+        "varName": "embed",
+        "fieldName": "User",
+        "message": "${mentionedUser.tag}",
+        "inline": "0",
+        "name": "Add Embed Field"
+      },
+      {
+        "storage": "1",
+        "varName": "embed",
+        "fieldName": "Staff Member",
+        "message": "${member.user.tag}",
+        "inline": "0",
+        "name": "Add Embed Field"
+      },
+      {
+        "storage": "1",
+        "varName": "embed",
+        "fieldName": "Reason:",
+        "message": "${tempVars(\"reason\")}",
+        "inline": "1",
+        "name": "Add Embed Field"
+      },
+      {
+        "storage": "1",
+        "varName": "embed",
+        "channel": "5",
+        "varName2": "channel",
+        "storage3": "0",
+        "varName3": "",
+        "iffalse": "0",
+        "iffalseVal": "",
+        "messageContent": "",
+        "name": "Send Embed Message"
+      },
+      {
+        "name": "End Action Sequence"
+      },
+      {
+        "member": "0",
+        "varName": "",
+        "reason": "Member [${mentionedUser.tag}] was Banned by [${member.user.tag}] for Following reason: None",
+        "name": "Ban Member"
+      },
+      {
+        "info": "0",
+        "find": "670326575757262889",
+        "storage": "1",
+        "varName": "channel",
+        "name": "Find Channel"
+      },
+      {
+        "title": "Member Banned",
+        "author": "${mentionedUser.username}",
+        "color": "RANDOM",
+        "url": "",
+        "authorIcon": "${mentionedUser.displayAvatarURL}",
+        "authorUrl": "",
+        "imageUrl": "",
+        "thumbUrl": "${mentionedUser.displayAvatarURL}",
+        "timestamp": "true",
+        "debug": "false",
+        "text": "",
+        "year": "",
+        "month": "",
+        "day": "",
+        "hour": "",
+        "minute": "",
+        "second": "",
+        "storage": "1",
+        "varName": "embed",
+        "name": "Create Embed Message"
+      },
+      {
+        "storage": "1",
+        "varName": "embed",
+        "fieldName": "User",
+        "message": "${mentionedUser.tag}",
+        "inline": "0",
+        "name": "Add Embed Field"
+      },
+      {
+        "storage": "1",
+        "varName": "embed",
+        "fieldName": "Staff Member",
+        "message": "${member.user.tag}",
+        "inline": "0",
+        "name": "Add Embed Field"
+      },
+      {
+        "storage": "1",
+        "varName": "embed",
+        "fieldName": "Reason:",
+        "message": "None",
+        "inline": "1",
+        "name": "Add Embed Field"
+      },
+      {
+        "storage": "1",
+        "varName": "embed",
+        "channel": "5",
+        "varName2": "channel",
+        "storage3": "0",
+        "varName3": "",
+        "iffalse": "0",
+        "iffalseVal": "",
+        "messageContent": "",
+        "name": "Send Embed Message"
+      },
+      {
+        "name": "End Action Sequence"
+      }
+    ]
+  },
+  {
+    "name": "suggest",
+    "permissions": "NONE",
+    "restriction": "1",
+    "_id": "RruCG",
+    "actions": [
+      {
+        "condition": "0",
+        "comparison": "0",
+        "value": "0",
+        "iftrue": "0",
+        "iftrueVal": "",
+        "iffalse": "3",
+        "iffalseVal": "2",
+        "name": "Check Parameters"
+      },
+      {
+        "channel": "0",
+        "varName": "",
+        "message": "[${member}], You are missing parameters after command. `?suggest [Text]`",
+        "storage": "0",
+        "varName2": "",
+        "iffalse": "0",
+        "iffalseVal": "",
+        "name": "Send Message"
+      },
+      {
+        "name": "End Action Sequence"
+      },
+      {
+        "info": "1",
+        "infoIndex": "1",
+        "storage": "1",
+        "varName": "text",
+        "name": "Store Command Params"
+      },
+      {
+        "storage": "1",
+        "varName": "id",
+        "min": "1",
+        "max": "50000",
+        "name": "Generate Random Number"
+      },
+      {
+        "server": "0",
+        "varName": "",
+        "dataName": "${tempVars(\"id\")}",
+        "changeType": "0",
+        "value": "tempVars(\"text\")",
+        "name": "Control Server Data"
+      },
+      {
+        "info": "0",
+        "find": "671703756068356106",
+        "storage": "1",
+        "varName": "channel",
+        "name": "Find Channel"
+      },
+      {
+        "title": "Suggestion | #${tempVars(\"id\")}",
+        "author": "${member.user.username}",
+        "color": "RANDOM",
+        "url": "",
+        "authorIcon": "${member.user.displayAvatarURL}",
+        "authorUrl": "",
+        "imageUrl": "",
+        "thumbUrl": "",
+        "timestamp": "false",
+        "debug": "false",
+        "text": "",
+        "year": "",
+        "month": "",
+        "day": "",
+        "hour": "",
+        "minute": "",
+        "second": "",
+        "storage": "1",
+        "varName": "embed",
+        "name": "Create Embed Message"
+      },
+      {
+        "storage": "1",
+        "varName": "embed",
+        "message": "${tempVars(\"text\")}",
+        "name": "Set Embed Description"
+      },
+      {
+        "storage": "1",
+        "varName": "embed",
+        "message": "${member.user.tag} | ID: #${tempVars(\"id\")}",
+        "footerIcon": "",
+        "name": "Set Embed Footer"
+      },
+      {
+        "storage": "1",
+        "varName": "embed",
+        "channel": "5",
+        "varName2": "channel",
+        "storage3": "0",
+        "varName3": "",
+        "iffalse": "0",
+        "iffalseVal": "",
+        "messageContent": "",
+        "name": "Send Embed Message"
+      },
+      {
+        "channel": "0",
+        "varName": "",
+        "message": ":white_check_mark: Posted your suggestion to #suggestions.",
+        "storage": "0",
+        "varName2": "",
+        "iffalse": "0",
+        "iffalseVal": "",
+        "name": "Send Message"
+      },
+      {
+        "storage": "0",
+        "varName": "",
+        "name": "Delete Message"
+      }
+    ]
+  },
+  {
+    "name": "reply",
+    "permissions": "NONE",
+    "restriction": "1",
+    "_id": "VApJF",
+    "actions": [
+      {
+        "info": "1",
+        "find": "Community Staff",
+        "storage": "1",
+        "varName": "role",
+        "name": "Find Role"
+      },
+      {
+        "member": "1",
+        "varName": "",
+        "role": "3",
+        "varName2": "role",
+        "iftrue": "3",
+        "iftrueVal": "2",
+        "iffalse": "0",
+        "iffalseVal": "",
+        "name": "Check If Member has Role"
+      },
+      {
+        "channel": "0",
+        "varName": "",
+        "message": "[${member}], You are missing the Community Staff role.",
+        "storage": "0",
+        "varName2": "",
+        "iffalse": "0",
+        "iffalseVal": "",
+        "name": "Send Message"
+      },
+      {
+        "name": "End Action Sequence"
+      },
+      {
+        "condition": "0",
+        "comparison": "0",
+        "value": "0",
+        "iftrue": "0",
+        "iftrueVal": "",
+        "iffalse": "3",
+        "iffalseVal": "2",
+        "name": "Check Parameters"
+      },
+      {
+        "channel": "0",
+        "varName": "",
+        "message": "[${member}], Please provide me an id and text. `?reply 12345 Text`",
+        "storage": "0",
+        "varName2": "",
+        "iffalse": "0",
+        "iffalseVal": "",
+        "name": "Send Message"
+      },
+      {
+        "name": "End Action Sequence"
+      },
+      {
+        "condition": "0",
+        "comparison": "0",
+        "value": "1",
+        "iftrue": "0",
+        "iftrueVal": "",
+        "iffalse": "3",
+        "iffalseVal": "2",
+        "name": "Check Parameters"
+      },
+      {
+        "channel": "0",
+        "varName": "",
+        "message": "[${member}], Please provide me text. `?reply 12345 Text`",
+        "storage": "0",
+        "varName2": "",
+        "iffalse": "0",
+        "iffalseVal": "",
+        "name": "Send Message"
+      },
+      {
+        "name": "End Action Sequence"
+      },
+      {
+        "info": "0",
+        "infoIndex": "1",
+        "storage": "1",
+        "varName": "id",
+        "name": "Store Command Params"
+      },
+      {
+        "server": "0",
+        "varName": "",
+        "dataName": "${tempVars(\"id\")}",
+        "comparison": "0",
+        "value": "",
+        "iftrue": "3",
+        "iftrueVal": "2",
+        "iffalse": "0",
+        "iffalseVal": "",
+        "name": "Check Server Data"
+      },
+      {
+        "channel": "0",
+        "varName": "",
+        "message": "[${member}], Make sure the ID exists.",
+        "storage": "0",
+        "varName2": "",
+        "iffalse": "0",
+        "iffalseVal": "",
+        "name": "Send Message"
+      },
+      {
+        "name": "End Action Sequence"
+      },
+      {
+        "info": "1",
+        "infoIndex": "2",
+        "storage": "1",
+        "varName": "text",
+        "name": "Store Command Params"
+      },
+      {
+        "server": "0",
+        "varName": "",
+        "dataName": "${tempVars(\"id\")}",
+        "defaultVal": "I'm Sorry I wasn't able to store the text from the database.",
+        "storage": "1",
+        "varName2": "ee",
+        "name": "Store Server Data"
+      },
+      {
+        "title": "Reply to Suggestion #${tempVars(\"id\")}",
+        "author": "",
+        "color": "RANDOM",
+        "url": "",
+        "authorIcon": "",
+        "authorUrl": "",
+        "imageUrl": "",
+        "thumbUrl": "",
+        "timestamp": "true",
+        "debug": "false",
+        "text": "",
+        "year": "",
+        "month": "",
+        "day": "",
+        "hour": "",
+        "minute": "",
+        "second": "",
+        "storage": "1",
+        "varName": "embed",
+        "name": "Create Embed Message"
+      },
+      {
+        "storage": "1",
+        "varName": "embed",
+        "fieldName": "Suggestion",
+        "message": "${tempVars(\"ee\")}",
+        "inline": "1",
+        "name": "Add Embed Field"
+      },
+      {
+        "storage": "1",
+        "varName": "embed",
+        "fieldName": "Reply from Staff Member",
+        "message": "${tempVars(\"text\")}",
+        "inline": "1",
+        "name": "Add Embed Field"
+      },
+      {
+        "storage": "1",
+        "varName": "embed",
+        "message": "#${tempVars(\"id\")} ",
+        "footerIcon": "",
+        "name": "Set Embed Footer"
+      },
+      {
+        "info": "0",
+        "find": "671703756068356106",
+        "storage": "1",
+        "varName": "channel",
+        "name": "Find Channel"
+      },
+      {
+        "storage": "1",
+        "varName": "embed",
+        "channel": "5",
+        "varName2": "channel",
+        "storage3": "0",
+        "varName3": "",
+        "iffalse": "0",
+        "iffalseVal": "",
+        "messageContent": "",
+        "name": "Send Embed Message"
+      },
+      {
+        "channel": "0",
+        "varName": "",
+        "message": ":white_check_mark: Posted your reply to #suggestions.",
+        "storage": "0",
+        "varName2": "",
+        "iffalse": "0",
+        "iffalseVal": "",
+        "name": "Send Message"
+      },
+      {
+        "storage": "0",
+        "varName": "",
+        "name": "Delete Message"
+      },
+      {
+        "name": "End Action Sequence"
+      }
+    ]
+  },
+  {
+    "name": "poll",
+    "permissions": "NONE",
+    "restriction": "1",
+    "_id": "ptgaO",
+    "actions": [
+      {
+        "info": "1",
+        "find": "Community Staff",
+        "storage": "1",
+        "varName": "role",
+        "name": "Find Role"
+      },
+      {
+        "member": "1",
+        "varName": "",
+        "role": "3",
+        "varName2": "role",
+        "iftrue": "3",
+        "iftrueVal": "2",
+        "iffalse": "0",
+        "iffalseVal": "",
+        "name": "Check If Member has Role"
+      },
+      {
+        "channel": "0",
+        "varName": "",
+        "message": "[${member}], You are missing the Community Staff role.",
+        "storage": "0",
+        "varName2": "",
+        "iffalse": "0",
+        "iffalseVal": "",
+        "name": "Send Message"
+      },
+      {
+        "name": "End Action Sequence"
+      },
+      {
+        "condition": "0",
+        "comparison": "0",
+        "value": "0",
+        "iftrue": "0",
+        "iftrueVal": "",
+        "iffalse": "3",
+        "iffalseVal": "2",
+        "name": "Check Parameters"
+      },
+      {
+        "channel": "0",
+        "varName": "",
+        "message": "You are missing the parameters. `?poll Text`",
+        "storage": "0",
+        "varName2": "",
+        "iffalse": "0",
+        "iffalseVal": "",
+        "name": "Send Message"
+      },
+      {
+        "name": "End Action Sequence"
+      },
+      {
+        "info": "1",
+        "infoIndex": "1",
+        "storage": "1",
+        "varName": "poll",
+        "name": "Store Command Params"
+      },
+      {
+        "info": "0",
+        "find": "671744341081063443",
+        "storage": "1",
+        "varName": "channel",
+        "name": "Find Channel"
+      },
+      {
+        "title": "Poll",
+        "author": "${member.user.username}",
+        "color": "RANDOM",
+        "url": "",
+        "authorIcon": "${member.user.displayAvatarURL}",
+        "authorUrl": "",
+        "imageUrl": "",
+        "thumbUrl": "",
+        "timestamp": "false",
+        "debug": "false",
+        "text": "",
+        "year": "",
+        "month": "",
+        "day": "",
+        "hour": "",
+        "minute": "",
+        "second": "",
+        "storage": "1",
+        "varName": "embed",
+        "name": "Create Embed Message"
+      },
+      {
+        "storage": "1",
+        "varName": "embed",
+        "message": "${tempVars(\"poll\")}",
+        "name": "Set Embed Description"
+      },
+      {
+        "storage": "1",
+        "varName": "embed",
+        "message": "👍 Sounds good! | 👎 I don't like it. | ❗ Inappropriate.",
+        "footerIcon": "",
+        "name": "Set Embed Footer"
+      },
+      {
+        "storage": "1",
+        "varName": "embed",
+        "channel": "5",
+        "varName2": "channel",
+        "storage3": "1",
+        "varName3": "msg",
+        "iffalse": "0",
+        "iffalseVal": "",
+        "messageContent": "",
+        "name": "Send Embed Message"
+      },
+      {
+        "storage": "1",
+        "varName": "msg",
+        "emoji": "4",
+        "varName2": "👍",
+        "varName3": "",
+        "name": "Add Reaction"
+      },
+      {
+        "storage": "1",
+        "varName": "msg",
+        "emoji": "4",
+        "varName2": "👎",
+        "varName3": "",
+        "name": "Add Reaction"
+      },
+      {
+        "storage": "1",
+        "varName": "msg",
+        "emoji": "4",
+        "varName2": "❗",
+        "varName3": "",
+        "name": "Add Reaction"
+      },
+      {
+        "channel": "0",
+        "varName": "",
+        "message": "Posted your poll to #polls.",
+        "storage": "0",
+        "varName2": "",
+        "iffalse": "0",
+        "iffalseVal": "",
+        "name": "Send Message"
+      },
+      {
+        "storage": "0",
+        "varName": "",
+        "name": "Delete Message"
+      }
+    ]
+  },
+  {
+    "name": "help",
+    "permissions": "NONE",
+    "restriction": "1",
+    "_id": "UdfeU",
+    "actions": [
+      {
+        "channel": "0",
+        "varName": "",
+        "message": "``` css== HELP ==\n?help - Show's Info About Commands\n?suggest - Suggest something PLEASEEEE!\n\n== Staf Members == \n?kick - Kick a Member\n?ban - Ban a Member\n?poll - Will Create poll for ya <3\n?reply - will reply to a suggestion (Please use the id without the hasttag.)```\n",
+        "storage": "0",
+        "varName2": "",
+        "iffalse": "0",
+        "iffalseVal": "",
+        "name": "Send Message"
+      }
+    ]
+  },
+  {
+    "name": "",
+    "permissions": "NONE",
+    "restriction": "1",
+    "_id": "FSDGI",
+    "actions": []
+  }
+]
