@@ -1,1 +1,18 @@
-[null,{"name":"Bot Online","temp":"","event-type":"1","_id":"iqMFq","actions":[{"activity":"0","nameText":"?help | Allipse Bot","url":"","stat":"0","name":"Set Bot Activity"}]}]
+[
+  null,
+  {
+    "name": "Bot Online",
+    "temp": "",
+    "event-type": "1",
+    "_id": "iqMFq",
+    "actions": [
+      {
+        "activity": "0",
+        "nameText": "?help | Allipse Bot",
+        "url": "",
+        "stat": "0",
+        "name": "Set Bot Activity"
+      }
+    ]
+  }
+]
